@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-size: 15px;
+    background-color: #FAFAFAFF;
+}
+
+/*---------header-----------*/
+h1{
+    text-align: center;
+    margin-bottom: px;
+    margin-top:80px;
+    color: #3E3E46FF;
+    font-size: 2em;
+    font-weight: lighter;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+header p{
+    text-align: center;
+    line-height: 20px;
+    color:#ADADAFFF ;
+}
+
+/*---------section-----------*/
+
+section{
+    margin: 60px 0;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:repeat(3 , 345px);
+    grid-template-rows: 130px 96px 100px 130px;
+    gap: 23px;
+}
+.card{
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.097);
+}
+.card img{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+section .card{
+    background-color: #fff;
+}
+section h3{
+    margin-bottom: 8px;
+}
+section p{
+    color:#ADADAFFF;
+    margin-bottom: 35px;
+}
+.card-1{
+    border-top: 4px solid hsl(180, 62%, 55%);
+    grid-column:1/2;
+    grid-row:2/4;
+}
+.card-2{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    grid-column:2/3;
+    grid-row:1/3;
+}
+.card-3{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    grid-column:2/3 ;
+    grid-row:3/5 ;
+}
+.card-4{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    grid-column:3/4 ;
+    grid-row: 2/4;
+}
+
+
+@media (max-width:600px){
+    header{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header h2{
+        font-size: 1.9em;
+        margin-bottom: 20px;
+    }
+    header p{
+        line-height: 23px;
+        
+    }
+  
+
+    section{
+        display: block;
+    }
+    .card{
+        width: 90%;
+        margin: 0 auto;
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+    section h3{
+        font-size: 1.6em;
+    }
+}
+
